@@ -25,9 +25,9 @@ while True:
     for (x, y, w, h) in faces:
         cx = x + w // 2
         if cx < frame_center - 50:
-            face_pos = "RIGHT"
-        elif cx > frame_center + 50:
             face_pos = "LEFT"
+        elif cx > frame_center + 50:
+            face_pos = "RIGHT"
         else:
             face_pos = "CENTER"
 
