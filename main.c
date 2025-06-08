@@ -68,7 +68,7 @@ void stepMotor(uint8_t a, uint8_t b, uint8_t c, uint8_t d) {
     HAL_GPIO_WritePin(PORT1, IN2, b);
     HAL_GPIO_WritePin(PORT1, IN3, c);
     HAL_GPIO_WritePin(PORT2, IN4, d);
-    HAL_Delay(5);  // 5 ms between steps (you can adjust this for speed)
+    HAL_Delay(5);  // 5 ms delay
 }
 
 void rotateRight(int steps) {
